@@ -5,87 +5,74 @@
 		 БИО
 	</title>
 
-<!-- название сайта -->
-<meta property="og:site_name" content="Фрилансер по жизни">
-<!-- описание страницы -->
-<meta property="og:description" content="Описание страницы про META теги">
-<!-- заголовок страницы, который будет выводится в записи социальной сети -->
-<meta property="og:title" content="META теги">
-<!-- локализация сайта, для русскоязычного сайта ru_RU -->
-<meta property="og:locale" content="ru_RU">
-<!-- тип контента, по умолчанию используется article -->
-<meta property="og:type" content="article">
-
 	<meta charset="utf-8">
-	<meta property="og:image" content="imeges\3.jpg">
-
-
-
 	<link rel="shotcut icon" href="imeges\m.ico">
-</head> 
+	   <script>
+    function setStyleSheet(url){
+       var stylesheet = document.getElementById("stylesheet");
+       stylesheet.setAttribute('href', url);
+    }
+    </script>
+
+    <link id="stylesheet" rel="stylesheet" type="text/css" href="style.css"/>
+
+	
+	<div class="head">
+		<h1>
+			Блог Харитонова Алексея</h1>
+			<div class="navig_all">
+					<ul class="navig">
+						<li>
+							<a href="rozklad.html" target="_blank">Моё расписание</a></li>
+							<li>
+							<a href="news.html" target="_blank">Новости</a></li>
+							<li>
+							<a href="photo.html" target="_blank">Фотоальбом</a></li>
+							<li>
+							<a href="form.html" target="_blank">Форма</a></li></ul>
+						</div></div>
+	</head>  
+
+	<br>
+
 
 <body>
-	<h1>
-		Блог Харитонова Алексея</h1>
-	<ul>
-		<li>
-			<a href="news.html" target="_blank"> 
-
-					Последние новости
-				</a>
-		</li>
-		<li>
-			<a href="photo.html" target="_blank"> 
-
-					Фотоальбом
-			</a>
-		</li>
-		<li>
-			<a href="rozklad.html" target="_blank"> 
-
-					Моё расписание
-			</a>
-		</li>
-	</ul>
-
+	<div class="styles">
+	 				<a onclick="setStyleSheet('style.css')" href="#">style</a>
+    				<a onclick="setStyleSheet('reset.css')" href="#">default</a></div>
+	 
+	 <div class="content">
+	<div class="body">
 	<h2>
-		Моя биография
-	</h2>
+		Моя биография</h2>
+    			
+ 	<table>
+	 	<tbody >
+	 		<tr>
+	 			<td>
+	 				<p class="TXT">
+	 				Я родился а потом понеслась.<br>
+					Было хорошо, пока не поступил в универ.<br>
+					Вот так-то, не оч вышло.<br>
+					Что не делается, то не делается.<br>
+					Так жизнь и проходит.<br></p></td>
+	 			<td>
+	 				<img src="imeges\2.jpg" width="150" class="IMG"></td></tr>
+	 		<tr>
+	 			<td colspan="2" class = "end">
+	 				<span class="end2">END</span></td></tr></tbody></table>
 
 
-	<img src="imeges\2.jpg" width="150">
+   			</div></div></body>
 
-	<br>
-	<p>
-		<b>Я родился</b> <em> а потом понеслась. Конец </em> <br>
-		<mark>было хорошо, пока не поступил в универ.</mark><br>
-		<bdo>Вот так то, не оч вышло</bdo> <br>
-		<blockquote>что не делается, то не делается</blockquote> <br>
-		<cite>Цитатки великих</cite> <br>
-		<del>так жизнь и проходит</del> <br>
+
+
+
+<footer class="footer">
 	
-	</p>	
+	<p>2021</p>
 
-
-				
-	<br>
-						
-
-
-
-
-
-
-
-</body>
-
-<footer>
-	<hr>
-
-	<small>
-		<em>2021 год после рождения Христа </em>
-	</small>
-	</footer>
+</footer>
 
 </html>
 

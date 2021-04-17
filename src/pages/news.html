@@ -6,42 +6,39 @@
 	</title>
 
 	<meta charset="utf-8">
-	<meta name="keywords" content=" мой сайт, html, прив бро ">
-	<meta name="decription" content="Этот сайт для лаб">
+
 
 	<link rel="shotcut icon" href="imeges\m.ico">
-</head> 
+	   <script>
+    function setStyleSheet(url){
+       var stylesheet = document.getElementById("stylesheet");
+       stylesheet.setAttribute('href', url);
+    }
+    </script>
 
-<body>
-	<h1>
-		Блог Харитонова Алексея</h1>
-	<ul>
-		<li>
-			<a href="index.html" target="_blank"> 
+    <link id="stylesheet" rel="stylesheet" type="text/css" href="style.css"/>
 
-					БИО
-				</a>
-		</li>
-		<li>
-			<a href="photo.html" target="_blank"> 
+	<div class="head">
+		<h1>
+			Блог Харитонова Алексея</h1>
+			<div class="navig_all">
+					<ul class="navig">
+						<li>
+							<a href="rozklad.html" target="_blank">Моё расписание</a></li>
+						<li>
+							<a href="form.html" target="_blank">Форма</a></li>
+						<li>
+							<a href="index.html" target="_blank">БИО</a></li></ul></div></div>
+	</head>  
 
-					Фотоальбом
-			</a>
-		</li>
-		<li>
-			<a href="rozklad.html" target="_blank"> 
+	<br>
 
-					Моё расписание
-			</a>
-		</li>
-
-		<li>
-			<a href="#kit"> 
-
-					Инфа по китам
-				</a>
-		</li>
-	</ul>
+<body> 
+	<div class="styles">
+	 				<a onclick="setStyleSheet('style.css')" href="#">style</a>
+    				<a onclick="setStyleSheet('reset.css')" href="#">default</a></div>
+	<div class="content">
+	<div class="body_news">
 
 	<h2>
 		Последние новости
@@ -136,17 +133,17 @@
 
 					Подробенее
 			</a>
-
-
+</div>
+	
+	</div>
 </body>
 
-<footer>
-	<hr>
 
-	<small>
-		<em>2021 год после рождения Христа </em>
-	</small>
-	</footer>
+<footer class="footer">
+	
+	<p>2021</p>
+
+</footer>
 
 </html>
 
