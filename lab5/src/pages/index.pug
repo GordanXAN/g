@@ -7,18 +7,21 @@ html
     link(rel='shotcut icon' href='imeges/m.ico')
 
 
-  body
+    body
     .head
       h1
         | Блог Харитонова Алексея
       .navig_all
         ul.navig
           li
-            a(href='rozklad.html' target='_blank') Моё расписание
+            mixin link(href,name)
+                  a(class!=attributes.class href=href)= name
+            +link('news.html', 'Новости')(class = "btn")
           li
-            a(href='news.html' target='_blank') Новости
+            +link('photo.html', 'Фото')(class = "btn")
           li
-            a(href='photo.html' target='_blank') Фотоальбом
+            a(href='rozklad.html' target='_blank')
+              | Моё рассписание
     br
     
     .content
